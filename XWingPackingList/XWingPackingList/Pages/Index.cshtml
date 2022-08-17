@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+	<form method="post">
+		<textarea asp-for="XWSText"></textarea>
+        @Model.ErrorMessage
+        <input type="submit" class="btn"/>
+    </form>
+    
+</div>
