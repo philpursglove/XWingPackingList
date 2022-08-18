@@ -33,6 +33,12 @@ namespace XWingPackingList.Pages
                 try
                 {
                     object testJson = JObject.Parse(XWSText);
+
+                    // Looks like we're valid - go onto the next thing
+
+                    TempData["XWS"] = XWSText;
+
+                    RedirectToPage("Process");
                 }
                 catch (JsonReaderException)
                 {
