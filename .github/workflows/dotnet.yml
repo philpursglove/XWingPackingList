@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore .\XWingPackingList\XWingPackingList.sln
+      run: dotnet restore ./XWingPackingList/XWingPackingList.sln
     - name: Build
-      run: dotnet build --no-restore  .\XWingPackingList\XWingPackingList.sln
+      run: dotnet build --no-restore  ./XWingPackingList/XWingPackingList.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal  .\XWingPackingList\XWingPackingList.sln
+      run: dotnet test --no-build --verbosity normal  ./XWingPackingList/XWingPackingList.sln
